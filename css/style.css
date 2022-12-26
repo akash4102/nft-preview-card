@@ -1,0 +1,106 @@
+body{
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.main{
+    background-color: hsl(216, 50%, 16%);
+    padding: 6%;
+    margin: 10% 5%;
+    border-radius: 3%;
+    color: hsl(215, 32%, 27%);
+    max-width: 400px;
+    max-height: 700px;
+}
+img{
+    max-width: 100%;
+    border-radius: 3%;
+}
+.card-desc{
+    font-weight: 400;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5;
+}
+.card-desc h3{
+    color: #fff;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    font-size: x-large;
+    font-weight: 900;
+}
+h3:hover{
+    color: hsl(178, 100%, 50%);
+}
+.imageBox {
+    position: relative;
+    float: left;
+}
+
+.imageBox .hoverImg {
+    position: absolute;
+    display: none;
+    background-color: hsl(178, 100%, 50%);
+
+}
+
+.imageBox:hover .hoverImg {
+    display: block;
+}
+.card-desc p{
+    margin-top: 10px;
+}
+hr{
+    border: 0;
+    border-top: 3px solid hsl(215, 32%, 27%);
+}
+.price{
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+.time{
+    display: flex;
+    align-items: center;
+}
+.price-time{
+    padding-top: 2%;
+    padding-bottom: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 5%;
+}
+.image-avatar{
+    width: 10%;
+    border-radius: 100%;
+    border:2px solid white;
+    margin-right: 4%;
+}
+.bottom>span{
+    color: white;
+    padding-left: 2%;
+}
+.bottom span:hover{
+    color: hsl(178, 100%, 50%);
+}
+.icon-img{
+    margin-right: 7px;
+}
+
+@media screen and (min-width: 375px) and (max-width:667px) {
+    .at-hover{
+        top: 28%;
+        left: 43.5%;
+    }
+}
