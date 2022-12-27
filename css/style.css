@@ -42,13 +42,18 @@ h3:hover{
 
 .imageBox .hoverImg {
     position: absolute;
+    left: 0;
+    top: 0;
     display: none;
-    background-color: hsl(178, 100%, 50%);
-
 }
 
 .imageBox:hover .hoverImg {
-    display: block;
+    display: flex;
+    padding: 43%;
+    max-width: 312px;
+    max-height: 312px;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.5;
 }
 .card-desc p{
     margin-top: 10px;
@@ -96,11 +101,4 @@ hr{
 }
 .icon-img{
     margin-right: 7px;
-}
-
-@media screen and (min-width: 375px) and (max-width:667px) {
-    .at-hover{
-        top: 28%;
-        left: 43.5%;
-    }
 }
